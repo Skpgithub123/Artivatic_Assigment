@@ -14,5 +14,5 @@ public interface DirectionFinderListener {
 
 
     @POST("/maps/api/directions/json?")
-    Call<ResponseBody> getrawdata(@Query("origin") String Origin, @Query("destination") String Destination, @Query("key") String Key);
+    Call<ResponseBody> getrawdata(@Query("origin") String Origin, @Query("destination") String Destination, @Query("key") String Key, @Query("alternatives") boolean alternatives);
 }

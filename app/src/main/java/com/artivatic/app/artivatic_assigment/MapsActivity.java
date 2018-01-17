@@ -667,7 +667,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     @Override
-    public Call<ResponseBody> getrawdata(@Query("origin") String Origin, @Query("destination") String Destination, @Query("key") String Key) {
+    public Call<ResponseBody> getrawdata(@Query("origin") String Origin, @Query("destination") String Destination, @Query("key") String Key, @Query("alternatives") boolean alternatives) {
         return null;
     }
+
+
 }
